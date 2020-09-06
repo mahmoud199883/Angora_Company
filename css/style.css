@@ -1,0 +1,454 @@
+.main-color
+{
+    color: #f25454;
+}
+body{
+    height: 4000px;
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*
+
+ start header section
+ 
+ */
+ .animationicon
+ {
+     padding: 25px 15px;
+     border-radius: 20px;
+     border: 1px solid #fff;
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     transform: translate(-50%,0);
+ }
+ .animationicon::after
+ {
+     content: "";
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     border-radius: 50%;
+     left:9px;
+     bottom: 40px;
+     background-color: #fff;
+     animation-name:animationiconheader ;
+     animation-timing-function: ease-in-out;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+ }
+ @keyframes animationiconheader{
+     0%
+     {
+         bottom: 40px;
+         opacity: 1;
+     }
+     50%
+     {
+         bottom: 30px;
+         opacity: 0.5;
+     }
+     100%
+     {
+         bottom: 15px;
+         opacity: 0;
+     }
+    
+
+ }
+
+ .sett
+ {
+     width: 39px;
+     height: 39px;
+     background-color: rgb(37, 36, 36);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     z-index: 20;
+     font-size: 14px;
+     border-bottom-right-radius:2px;
+     border-top-right-radius:2px;
+
+     top:150px;
+     left: 0px;
+    
+ }
+ .sett:hover
+ {
+     background-color: rgb(68, 68, 68)
+     ;
+ }
+ .sett i{
+    color: wheat;
+    padding: 20px;
+
+ }
+
+.header-con
+{
+   height: 100vh;
+   
+}
+.mycaption
+{
+    position: absolute;
+    top: 30%;
+    height: 100%;
+  
+}
+
+.mycaption h1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+
+}
+.navbar-nav .nav-item .nav-link
+{
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding:  10px 15px;
+}
+.navbar-nav .nav-item .nav-link:hover
+{
+    color: #f25454 !important;
+
+}
+
+.mynav
+{
+    position: absolute;
+    z-index: 2;
+    border-bottom: 1px solid rgb(153, 149, 149);
+}
+
+/*
+
+end header section
+
+*/
+
+
+
+
+/*
+
+start about section 
+
+
+*/
+
+.about
+{
+    margin:8rem 0rem;
+}
+.about-word
+{
+    align-items: center;
+}
+.about-head p{
+    line-height: 24.5px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+   color: rgb(153, 153, 153);
+    margin-bottom: 70px;
+}
+.about-word h3{
+    position: absolute;
+    top: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 38px;
+    top:65%;
+    transform: translate(0,-50%);
+}
+.about-word h2{
+    font-size: 6rem;
+    font-weight: 600;
+    color: #f8f1f1;
+
+}
+.brd
+{
+    height: 2px;
+    background-color:rgb(37, 36, 36);
+    width: 50px;
+    margin: auto;
+    transition: all 0.3s linear;
+
+}
+.about-head:hover .brd
+{
+  width: 60px;
+}
+.mypar
+{
+    line-height: 24.5px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 10px;
+}
+.progress-heading
+{
+    position: relative;
+    color: #666;
+}
+.progress-value
+{
+    position: absolute;
+    text-align: right;
+    
+}
+.progress{
+    border-radius:  2px ;
+    height: 5px;
+
+}
+.progress-bar
+{
+    background-color: #f25454;
+    
+}
+
+
+
+
+/* 
+
+start team section
+
+ */
+
+ .team
+ {
+     padding: 8rem 0;
+ }
+ .teamcontainer
+ {
+     position: relative;
+ }
+ .teamcontainer .overlay
+ {
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0);
+
+ }
+ .teamcontainer 
+ {
+     overflow: hidden;
+ }
+ .teamcontainer .imgcon img
+ {
+     transition: all 0.3s ease-in-out;
+ }
+ .teamcontainer:hover .imgcon img{
+              transform: scale(1.2);
+ }
+ .teamcontainer .overlay a i
+ {
+     color: transparent;
+     font-size: 16px;
+     line-height: 16px;
+     font-weight: 400;
+     line-height: 1;
+ }
+
+ .teamcontainer:hover .overlay a i
+ {
+     padding: 10px;
+     color: #fff;
+ }
+ .teamcontainer:hover .overlay
+ {
+    background-color: rgba(242, 84, 84, 0.85);
+ }
+.con:hover .title
+{
+     color: #f25454; 
+     
+}
+.myquestion h3
+{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 50px;
+    color: rgb(40, 40, 40)    ;
+}
+.mybtn
+{
+    background-color: rgba(207, 24, 24, 0.85);
+    padding: 18px 30px ;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.mybtn:hover
+{
+   background-color: rgb(242, 84, 84);;
+}
+
+
+
+
+/* 
+
+start service section
+
+*/
+.service
+{
+    padding: 8rem 0;
+}
+
+.myservicecontainer i{
+    padding: 5px;
+    color: rgb(242, 84, 84) ;
+    font-size: 32px;
+    line-height: 32px;
+}
+.myservicecontainer:hover h3{
+    
+    color: #f25454;
+ 
+
+}
+.myservicecontainer h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgb(40, 40, 40);
+}
+.myservicecontainer p{
+    font-size: 14px;
+
+}
+.servicebac
+{
+    background-color:rgb(250, 250, 250)    ;
+}
+
+
+
+/*
+
+start client section
+
+*/
+.client
+{
+    padding: 8rem 0;
+}
+.client .nav- .nav-link
+
+{
+    display: inline-block;
+    background-color: chartreuse;
+    
+}
+
+
+
+
+/* 
+start touch section 
+*/
+.touch
+{
+    padding: 8rem 0;
+  background-color:rgb(250, 250, 250)  ;
+    
+}
+
+.touchicon i{
+    padding-top: 15px ;
+    font-size: 40px;
+    color: rgb(242, 84, 84);
+}
+.touchicon:hover h4{
+    color:#f25454; 
+}
+.touchinfo h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+.myforminput
+{
+    border-radius: 3px;
+    padding: 14px 18px;
+    border: solid 2px white;
+}
+.mybutton
+{
+    padding: 18px 30px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+.row form input:focus,.row form textarea:focus
+{
+    border-color: #f25454;
+    box-shadow: none;
+}
+
+/*
+ start footer section 
+ 
+ */
+
+ .topsiteico
+ {
+     position: absolute;
+     left: 50%;
+     bottom: 90%;
+     transform: translate(-50%,-50%);
+     width: 50px;
+     height: 50px;
+     border: 1px solid white;
+     border-radius: 50%;
+     text-align: center;
+     padding-top: 10px;
+     color: #fff;
+    background: rgba(242, 84, 84, 0.5);;
+     font-size: 18px;
+
+ }
+ .footerbac
+ {
+   background-image: url(../images/dotted-map.png);
+   background: #222;
+ }
+ .buttonsstyle
+ {
+     border-color: rgb(161, 161, 161);
+     margin-right:  5px;
+
+ }
+ .buttonsstyle:hover
+ {
+     background-color: transparent;
+     border-color:#f25454 ;
+     color:#f25454 !important ;
+ }
+ .footerlink:hover
+ {
+    color:#f25454 !important ;
+ }
+  .iconfooterbac
+ {
+    background: #1a1a1a;
+ }
+
+   
