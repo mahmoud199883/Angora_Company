@@ -2,21 +2,49 @@
 {
     color: #f25454;
 }
-body{
-    height: 4000px;
-}
+
 *
 {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-
+.setting
+{
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    z-index: 9999;
+}
+.setting .mycolors
+{
+    background-color: black;
+    color: white;
+    float: left;
+    position: relative;
+}
+.setting .mycolors>div
+{
+    width: 30px;
+    margin-left: 10px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.setting i{
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    position: relative;
+    
+ 
+}
 /*
 
  start header section
  
  */
+
  .animationicon
  {
      padding: 25px 15px;
@@ -82,8 +110,7 @@ body{
  }
  .sett:hover
  {
-     background-color: rgb(68, 68, 68)
-     ;
+     background-color: rgb(68, 68, 68) ;
  }
  .sett i{
     color: wheat;
@@ -350,7 +377,7 @@ start client section
 */
 .client
 {
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
 .client .nav- .nav-link
 
@@ -363,12 +390,24 @@ start client section
 
 
 
+
+.anotherimg
+{
+    margin-top: 10px;
+}
+.img-item
+{
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
 /* 
 start touch section 
 */
 .touch
 {
-    padding: 8rem 0;
+    padding: 1rem 0;
   background-color:rgb(250, 250, 250)  ;
     
 }
